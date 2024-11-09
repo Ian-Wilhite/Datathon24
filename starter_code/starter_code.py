@@ -27,7 +27,6 @@ def model(words, strikes, isOneAway, correctGroups, previousGuesses, error):
 
 	# Your Code here
 	# Good Luck!
-	playerLives = 4
 	groups = []
 	bestGroup = []
 	highestScore = 0
@@ -36,11 +35,13 @@ def model(words, strikes, isOneAway, correctGroups, previousGuesses, error):
 		for j in range(i + 1, len(words)):
 			for k in range(j + 1, len(words)):
 				for l in range(k + 1, len(words)):
+					if(words[i] in correctGroups or words[j] in correctGroups or words[k] in correctGroups or words[l] in correctGroups):
+						continue
 					group = [words[i], words[j], words[k], words[l]]
 					score = (word2vec_model.similarity(words[i], words[j]) + word2vec_model.similarity(words[i], words[k]) + 
 							word2vec_model.similarity(words[i], words[l]) + word2vec_model.similarity(words[j], words[k]) + 
 							word2vec_model.similarity(words[j], words[l]) + word2vec_model.similarity(words[k], words[l])) / 6
-					if score > highestScore:
+					if score > highestScore and group not in previousGuesses:
 						nextGuess = group
 						highestScore = score
 	
