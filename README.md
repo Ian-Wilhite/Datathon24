@@ -1,8 +1,5 @@
 ligma
 
-asdf
-
-
 
 asdf
 
