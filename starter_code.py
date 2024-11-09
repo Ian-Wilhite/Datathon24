@@ -30,9 +30,10 @@ def model(words, strikes, isOneAway, correctGroups, previousGuesses, error):
 							score = (similarity(words[i], words[j]) + similarity(words[i], words[k]) + 
 									similarity(words[i], words[l]) + similarity(words[j], words[k]) + 
 									similarity(words[j], words[l]) + similarity(words[k], words[l])) / 6
-							if score > highestScore:
+							if score > highestScore and group not in previousGuesses:
 								nextGuess = group
 								highestScore = score
+		
 	# Example code where guess is hard-coded
 	guess = ["apples", "bananas", "oranges", "grapes"] # 1D Array with 4 elements containing guess
 	endTurn = False # True if you want to end puzzle and skip to the next one
