@@ -1,3 +1,9 @@
+
+
+def getSimilarity(word1, word2):
+    return 0
+
+
 def model(words, strikes, isOneAway, correctGroups, previousGuesses, error):
 	"""
 	_______________________________________________________
@@ -14,9 +20,8 @@ def model(words, strikes, isOneAway, correctGroups, previousGuesses, error):
 	endTurn - Boolean if you want to end the puzzle
 	_______________________________________________________
 	"""
-
-	# Your Code here
-	# Good Luck!
+ 
+	
 
 	# Example code where guess is hard-coded
 	guess = ["apples", "bananas", "oranges", "grapes"] # 1D Array with 4 elements containing guess
