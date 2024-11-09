@@ -17,7 +17,8 @@ def model(words, strikes, isOneAway, correctGroups, previousGuesses, error):
 
 	# Your Code here
 	# Good Luck!
-
+	playerLives = 4
+	
 	# Example code where guess is hard-coded
 	guess = ["apples", "bananas", "oranges", "grapes"] # 1D Array with 4 elements containing guess
 	endTurn = False # True if you want to end puzzle and skip to the next one
