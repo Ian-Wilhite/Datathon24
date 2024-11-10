@@ -1,5 +1,5 @@
 from flask import Flask, request
-from starter_code import model
+from starter_code2 import model
 
 # Please do NOT modify this file
 # Modifying this file may cause your submission to not be graded
