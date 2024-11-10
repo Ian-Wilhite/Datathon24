@@ -3,7 +3,7 @@
 ## Contributors:
  - [Ian Wilhite](https://www.linkedin.com/in/ian-wilhite/)
  - [Tanush Yarram](https://www.linkedin.com/in/tanushyarram/)
- - Joshua Matthew
+ - [Joshua Mathew](https://www.linkedin.com/in/joshua-mathew-1145bb199/)
  - James Lee
 
 ## SETUP:
