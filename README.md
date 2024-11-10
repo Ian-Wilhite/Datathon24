@@ -6,4 +6,8 @@
  - Joshua Matthew
  - James Lee
 
+## SETUP:
+
+ - download the [ML file from Kaggle](https://www.kaggle.com/datasets/adarshsng/googlenewsvectors)
+ - 
    
